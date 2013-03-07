@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>BiKiR -Beagleboard ile Kablosuz İletişimli Robot Site Kontolü Denemesi</title>
+	<link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<meta http-equiv=content-type content=text/html;charset=iso-8859-9>
+</head>
+
+<body>
+
+	<div id="page">
+		<div id="site_title">
+			<span>BiKiR - Beagleboard ile Kablosuz İletişimli Robot</span>
+		</div>
+		<div id="primary_content">
+			<div id="menu">
+				<ul>
+					<li><span class="color01">01</span> <a href="index.html">DİZAYN</a></li>
+					<li><span class="color02">02</span> <a href="#">AŞAMALAR</a></li>
+					<li><span class="color03">03</span> <a href="#">KODLAR</a></li>
+					<li><span class="color04">04</span> <a href="maliyet.html">MALİYET</a></li>
+					<li><span class="color05">05</span> <a href="socket.html">Web Kontrol(beta)</a></li>
+				</ul>
+			</div>
+			
+			
+			<div id="page_content">
+				<h1>Web Kontrol</h1>
+				<p>Raspberry Pi'nin IP Adresini ve Portunu Giriniz<br>
+
+<form action="islem.php" method="post">
+IP: <input type="text" name="ip" value="127.0.0.1" />
+PORT: <input type="text" name="port" value ="6878" />
+<input type="submit" value="Bağlanti Kur" />
+</form> 
+
+</p>
+</div>
+		</div>
+	</div>
+</body>
+
+</html>

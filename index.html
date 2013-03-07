@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<title>BiKiR -Beagleboard ile Kablosuz İletişimli Robot Site Kontolü Denemesi</title>
+	<link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+	<meta http-equiv=content-type content=text/html;charset=iso-8859-9>
+</head>
+
+<body>
+	<div id="page">
+		<div id="site_title">
+			<span>BiKiR - Beagleboard ile Kablosuz İletişimli Robot</span>
+		</div>
+		<div id="primary_content">
+			<div id="menu">
+				<ul>
+					<li><span class="color01">01</span> <a href="#">DİZAYN</a></li>
+					<li><span class="color02">02</span> <a href="#">AŞAMALAR</a></li>
+					<li><span class="color03">03</span> <a href="#">KODLAR</a></li>
+					<li><span class="color04">04</span> <a href="maliyet.html">MALİYET</a></li>
+					<li><span class="color05">05</span> <a href="socket.html">Web Kontrol(beta)</a></li>
+				</ul>
+			</div>
+			
+			
+			<div id="page_content">
+				<h1>Dizayn</h1>
+				<img id="bikir" src="images/bikir.png" />
+				<p>Projemiz genel hatlarıyla: İstemci taraf ile TCP protokolu üzerinden wireless haberleşme kurulması ve 
+				<a href="http://www.beagleboard.org"> Beagleboard</a>  ile <a href="http://www.arduino.cc">Arduino</a>'nun seri iletişim kullanarak haberleştirilmesi ve  üzerinedir. 
+				Yazdığımız program TCP istemcisinden gelen haberleşme paketlerini arduino'ya eş zamanlı olarak göndermektedir. </p>
+
+				<p>Projemiz ucuz maliyetli, geliştirilebilir, internet üzerinden kontrol edilebilen bir
+gömülü sistem(embedded system) dir. Yaptığımız robot üzerindeki kameradan gelen
+görüntüyü canlı yayınla vermektedir. İnternet üzerindeki görüntüyü alan bilgisayar başındaki
+kullanıcı, robotu sağ-sol ve ileri-geri hareket ettirebilmektedir.</p>
+
+				<p>Linux tabanlı bir işletim sisteminin bir mikrodenetleyici kart ile iletişiminin
+sağlanması ve bu vasıta ile sistemin tüm kontrolünün sağlanmasıdır.
+Linux tabanlı işletim sistemini kurduğumuz kart Beagleboard adı verilen üzerinde
+Texas Instruments firmasına ait ARM Cortex-A8 işlemci taşımaktadır. Bu kartın usb çıkışı
+kameradan görüntü almak ve modeme bağlanabilmek için kullanılmıştır.</p>
+
+<p>Mikrodenetleyici olarak ise Atmel 328 tabanlı açık kaynak bir proje olan Arduino
+kullanılmıştır. Arduino bir çok farklı modelle elektronik piyasasına çıkmış oldukça
+kararlı çalışan, programlaması ve uygulaması diğer mikrodenetleyici kartlarına nazaran
+kullanışlı, giderek yaygınlaşan bir karttır. Projemizde kullandığımız model Arduino UNO'dur.
+Beagleboard Arduino ile Seri Portu kullanarak iletişim kurmaktadır.</p>
+</div>
+		</div>
+	</div>
+</body>
+
+</html>
