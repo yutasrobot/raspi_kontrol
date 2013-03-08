@@ -5,7 +5,7 @@ session_start();
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-	<title>BiKiR -Beagleboard ile Kablosuz İletişimli Robot Site Kontolü Denemesi</title>
+	<title>Raspberry Pi - Uzaktan Ev Kontrol Projesi</title>
 	<link href="css/styles.css" media="screen" rel="stylesheet" type="text/css" />
 	<link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
 	<meta http-equiv="Content-Type" content="text/HTML; charset=utf-8" />
