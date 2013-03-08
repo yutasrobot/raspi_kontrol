@@ -53,7 +53,7 @@ xmlhttp.send();
 function makeData(form,yon)
 { 
     var sendData = 'l';  
-    sendData +=  form.led1[0].checked ? form.led1[0].value : form.led1[1].value;  //bunu seviyorum iþte
+    sendData +=  form.led1[0].checked ? form.led1[0].value : form.led1[1].value;  
 	sendData +=  form.led2[0].checked ? form.led2[0].value : form.led2[1].value;
     document.getElementById("myDiv").innerHTML = sendData;
 
@@ -64,12 +64,12 @@ function makeData(form,yon)
 <body>
 	<div id="page">
 		<div id="site_title">
-			<span>BiKiR - Beagleboard ile Kablosuz İletişimli Robot</span>
+			<span>Raspberry Pi - Uzaktan Ev Kontrol Projesi </span>
 		</div>
 		<div id="primary_content">
 			<div id="menu">
 				<ul>
-					<li><span class="color01">01</span> <a href="#">DİZAYN</a></li>
+					<li><span class="color01">01</span> <a href="index.html">DİZAYN</a></li>
 					<li><span class="color02">02</span> <a href="#">AŞAMALAR</a></li>
 					<li><span class="color03">03</span> <a href="#">KODLAR</a></li>
 					<li><span class="color04">04</span> <a href="maliyet.html">MALİYET</a></li>
