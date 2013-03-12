@@ -52,7 +52,7 @@ xmlhttp.send();
 
 function makeData(form,yon)
 { 
-    var sendData = 'l';  
+    var sendData = 'L';  
     sendData +=  form.led1[0].checked ? form.led1[0].value : form.led1[1].value;  
 	sendData +=  form.led2[0].checked ? form.led2[0].value : form.led2[1].value;
     document.getElementById("myDiv").innerHTML = sendData;
