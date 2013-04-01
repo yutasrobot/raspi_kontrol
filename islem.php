@@ -50,6 +50,35 @@ xmlhttp.open("GET","gonder.php?q="+str,true);
 xmlhttp.send();	
 }
 
+ 
+function a() {
+	document.getElementById('led').innerHTML ='<img src=images/1.bmp></img>' ;
+}
+function aa() {
+	document.getElementById('led').innerHTML = '<img src=images/0.bmp></img>';
+
+	}
+	function b() {
+	document.getElementById('led2').innerHTML ='<img src=images/1.bmp></img>' ;
+}
+function bb() {
+	document.getElementById('led2').innerHTML = '<img src=images/0.bmp></img>';
+
+	}
+	function c() {
+	document.getElementById('led3').innerHTML ='<img src=images/1.bmp></img>' ;
+}
+function cc() {
+	document.getElementById('led3').innerHTML = '<img src=images/0.bmp></img>';
+
+	}
+	function d() {
+	document.getElementById('led4').innerHTML ='<img src=images/1.bmp></img>' ;
+}
+function dd() {
+	document.getElementById('led4').innerHTML = '<img src=images/0.bmp></img>';
+
+	}
 function makeData(form,yon)
 { 
     var sendData = 'L';  
@@ -78,11 +107,26 @@ function makeData(form,yon)
 			</div>
 	<div id="page_content">
 				<h1>Web Kontrol</h1>		
-<form action="" name = "salla" >	
-		<input type="radio" name="led1" value = "1" /> On <br>
-        <input type="radio" name="led1" value = "0" /> Off<br><br>
-		<input type="radio" name="led2" value = "1" /> On <br>
-        <input type="radio" name="led2" value = "0" /> Off<br><br>
+				
+<form action="" name = "salla" >
+	
+		<table><tr><td>
+		
+		<div id="led"><img src=images/0.bmp></img>	</div>
+		<input type="radio" name="led1" value = "1" onclick="a()"> On <br>
+        <input type="radio" name="led1" value = "0" onclick="aa()" select=true > Off</td><td>
+		<div id="led2">	<img src=images/0.bmp></img></div>
+		<input type="radio" name="led2" value = "1" onclick="b()"> On <br>
+        <input type="radio" name="led2" value = "0" onclick="bb()"  > Off</td>	<td>	
+		<div id="led3"><img src=images/0.bmp>	</div>
+		<input type="radio" name="led3" value = "1" onclick="c()"> On <br>
+        <input type="radio" name="led3" value = "0" onclick="cc()"  > Off</td><td> 
+		<div id="led4"><img src=images/0.bmp>	</div>
+		<input type="radio" name="led4" value = "1"  onclick="d()"> On <br>
+        <input type="radio" name="led4" value = "0"  onclick="dd()"  > Off</td>	
+	
+				</tr></table>
+				
 		<button type="button" onclick="makeData(salla,'2')">Gönder</button></td><br>
 </form>
 </div>
